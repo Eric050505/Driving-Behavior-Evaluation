@@ -20,7 +20,7 @@ from sklearn.metrics import classification_report
 from transformers import EarlyStoppingCallback
 
 print("Importing libs: Done")
-root_dir = "."
+root_dir = ".."
 # root_dir = "./DBE/ViViT/ViViT-Driving-Scene"
 
 def load_data(mode):
