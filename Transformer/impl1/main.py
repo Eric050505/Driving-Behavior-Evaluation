@@ -31,7 +31,6 @@ def prepare_data(file_path):
     return data_tensor, scaler
 
 
-# 生成序列索引
 def generate_indices(data_length, enc_seq_len, target_seq_len):
     indices = []
     for i in range(data_length - enc_seq_len - target_seq_len + 1):
@@ -39,7 +38,6 @@ def generate_indices(data_length, enc_seq_len, target_seq_len):
     return indices
 
 
-# 数据集分割
 def split_dataset(data_tensor, train_ratio=0.7, val_ratio=0.15):
     total_length = len(data_tensor)
     train_end = int(total_length * train_ratio)
@@ -53,7 +51,6 @@ def split_dataset(data_tensor, train_ratio=0.7, val_ratio=0.15):
 def generate_square_subsequent_mask(dim1, dim2):
     return torch.triu(torch.ones(dim1, dim2) * float('-inf'), diagonal=1)
 
-# 主程序
 def main():
     file_path = "data/dfs_merged_upload.csv"
 

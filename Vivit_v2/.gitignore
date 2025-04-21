@@ -1,0 +1,6 @@
+wandb/
+data/ori_data/
+*.pth
+
+.idea/
+*.mp4
