@@ -16,7 +16,6 @@ from torch.utils.data import DataLoader
 import torch
 import datetime
 import transformer_timeseries as tst
-import numpy as np
 
 # Hyperparams
 test_size = 0.1

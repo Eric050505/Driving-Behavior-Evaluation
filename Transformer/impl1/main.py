@@ -52,7 +52,7 @@ def generate_square_subsequent_mask(dim1, dim2):
     return torch.triu(torch.ones(dim1, dim2) * float('-inf'), diagonal=1)
 
 def main():
-    file_path = "data/dfs_merged_upload.csv"
+    file_path = "../data/dfs_merged_upload.csv"
 
     data_tensor, scaler = prepare_data(file_path)
 

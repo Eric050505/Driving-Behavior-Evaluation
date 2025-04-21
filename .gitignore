@@ -1,1 +1,3 @@
-Transformer/transformer_model.pth
+Transformer/impl1/transformer_model.pth
+*.bin
+*.safetensors
